@@ -1,0 +1,219 @@
+/* PÁGINA GERAL */
+html, body {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Tamanho de fonte padrão */
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Garante que o body não ultrapasse a tela */
+    height: 100%; /* Garante que o body ocupe a altura total */
+    overflow-x: hidden; /* Oculta a rolagem horizontal */
+    background-color: rgb(0, 113, 179);
+    box-sizing: border-box; /* Inclui padding e borda nas dimensões */
+  }
+  
+  /* Estilos para diferentes tamanhos de tela */
+  @media only screen and (max-width: 600px) {
+    body {
+      font-size: 12px;
+    }
+    
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  
+  /* Modo escuro */
+  [data-theme="dark"] {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  /* MENU */
+  nav {
+    position: fixed; /* Fixar o elemento no topo */
+    position: sticky; /* Fixar o elemento no topo */
+    top: 0; /* Alinhar ao topo da página */
+    left: 0; /* Alinhar à esquerda da página */
+    width: 100%; /* Largura total da página */
+    background-color: #000000; /* Cor de fundo */
+    border-bottom: 1px solid rgb(0, 113, 179); /* Linha de separação opcional
+    border-bottom: 1px solid rgb(0, 44, 0); /* Linha de separação opcional */
+    padding: 8px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e borda nas dimensões */
+    z-index: 1000; /* Garantir que o menu fique acima de outros elementos */
+  }
+  
+  nav a {
+    padding: 8px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold; /* Corrigido para 'bold' */
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s; /* Suaviza a transição */
+    line-height: 1.2;
+    white-space: nowrap; /* Evita quebra de linha nos itens do menu */
+  }
+  
+  nav a:hover {
+    text-align: center;
+    background-color: #2daf05;
+    color: #000000;
+  }
+  
+  /* Modo escuro - menu */
+  [data-theme="dark"] nav {
+    background-color: #333333;
+    border-bottom: 1px solid #444444;
+  }
+  
+  [data-theme="dark"] nav a {
+    color: #ffffff;
+  }
+  
+  [data-theme="dark"] nav a:hover {
+    background-color: #2daf05;
+    color: #000000;
+  }
+  
+  /* Parte de texto do site */
+  h1 {
+    margin-top: 50px; /* Espaço acima do parágrafo */
+    color: white; 
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  /* Parte de texto do site */
+  h2 {
+    margin-top: 100px; /* Espaço acima do parágrafo */
+    color: white; 
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  /* Parte de texto do site */
+  h3 {
+    margin-top: 100px; /* Espaço acima do parágrafo */
+    color: white; 
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  p {
+    color: white;
+    margin-top: 1.5em; /* Espaço acima do parágrafo */
+    margin-bottom: 1em; /* Espaço abaixo do parágrafo */
+  }
+  
+  .pconf, .pconf1, .pconf2 {
+    color: white;
+  }
+  
+  .pconf {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .pconf1 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .pconf2 {
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+  
+  .pcinza, .pcinza2, .pcinza3 {
+    color: rgb(109, 109, 109);
+  }
+  
+  .pcinza {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .pcinza2 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  
+  .pcinza3 {
+    margin-top: 0px;
+    margin-bottom: 16px;
+  }
+  
+  cite {
+    color: red;
+    font-size: 20px;
+  }
+  
+  code {
+    color: rgb(37, 131, 0);
+    font-size: 16px;
+  }
+  
+  ul, li {
+    color: white;
+  }
+  
+  .bn62 {
+    color: #1cc49d;
+    background-color: #1b2f31;
+    border-radius: 50px;
+    margin: left;
+    padding: 10px;
+    height: 40px;
+    width: 140px;
+    font-size: small;
+    font-weight: 20;
+  }
+  
+  /* Seções */
+  .comandos-df, .comandos-top, .comandos-help, .permissao-linux, .redes, .ssh, .samba, .gerenciador-pacotes, .filesystem, .xorg {
+    background-color: #070707; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Cantos arredondados (opcional) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil (opcional) */
+    margin-bottom: 1em; /* Espaço abaixo do parágrafo */
+    box-sizing: border-box; /* Inclui padding e borda nas dimensões */
+  }
+  
+  /* Modo escuro - seções */
+  [data-theme="dark"] .comandos-df, 
+  [data-theme="dark"] .comandos-top, 
+  [data-theme="dark"] .comandos-help, 
+  [data-theme="dark"] .permissao-linux, 
+  [data-theme="dark"] .redes, 
+  [data-theme="dark"] .ssh, 
+  [data-theme="dark"] .samba, 
+  [data-theme="dark"] .gerenciador-pacotes, 
+  [data-theme="dark"] .filesystem,
+  [data-theme="dark"] .xorg {
+    background-color: #ffffff;
+    color: #000000;
+  
+  }
+  
+  /* Definições de texto no modo escuro */
+  [data-theme="dark"] h1,
+  [data-theme="dark"] h2,
+  [data-theme="dark"] h3,
+  [data-theme="dark"] p,
+  [data-theme="dark"] .pconf,
+  [data-theme="dark"] .pconf1,
+  [data-theme="dark"] .pconf2,
+  [data-theme="dark"] .pcinza,
+  [data-theme="dark"] .pcinza2,
+  [data-theme="dark"] .pcinza3,
+  [data-theme="dark"] ul,
+  [data-theme="dark"] li {
+    color: #000000; /* Cor do texto em modo escuro */
+  }
